@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JMS Talent Group</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f8f8f8;
+      color: #1e1e1e;
+    }
+    header {
+      background: linear-gradient(120deg, #004e92, #000428);
+      color: white;
+      padding: 5rem 1rem 3rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+    nav {
+      background-color: #ffffff;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #004e92;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #000428;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #004e92;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .contact-box {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      margin-top: 0.25rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 0.75rem;
+      background-color: #004e92;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    button:hover {
+      background-color: #003873;
+    }
+    footer {
+      background-color: #000428;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JMS Talent Group</h1>
+    <p>Talent Management for Film, Television, and New Media</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#approach">Approach</a>
+    <a href="#clients">Clients</a>
+    <a href="#submissions">Submissions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>JMS Talent Group is a boutique talent management company based in Los Angeles. We specialize in representing professional actors across television, film, and emerging media platforms.</p>
+    </section>
+
+    <section id="approach">
+      <h2>Approach</h2>
+      <p>We believe in strategic career building and personalized support. Our approach blends talent development with long-term vision, always putting our clients' artistic and professional goals first.</p>
+    </section>
+
+    <section id="clients">
+      <h2>Clients</h2>
+      <p>We work with a curated roster of artists. Additional information is available upon request.</p>
+    </section>
+
+    <section id="submissions">
+      <h2>Submissions</h2>
+      <p>JMS Talent Group accepts new talent by referral only. Unsolicited submissions may not receive a response.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/">
+  <input type="hidden" name="form-name" value="contact" />
+  <p style="display:none">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+<p>
+  <label>Name <input type="text" name="name" required /></label>
+</p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+  <label>Message <textarea name="message" rows="6" required></textarea></label>
+</p>
+<p>
+  <button type="submit">Send</button>
+</p>
+</form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    JMS Talent Group
+  </footer>
+</body>
+</html>
