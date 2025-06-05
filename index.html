@@ -148,25 +148,27 @@
       <p>JMS Talent Group accepts new talent by referral only. Unsolicited submissions may not receive a response.</p>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-box">
-       https://formspree.io/f/mldndokr
-<p>
-  <label>Name <input type="text" name="name" required /></label>
-</p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-  <label>Message <textarea name="message" rows="6" required></textarea></label>
-</p>
-<p>
-  <button type="submit">Send</button>
-</p>
-</form>
-      </div>
-    </section>
+   <section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-box">
+    <form action="https://formspree.io/f/mldndokr" method="POST">
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <p>
+        <label>Name <input type="text" name="name" required /></label>
+      </p>
+      <p>
+        <label>Email <input type="email" name="email" required /></label>
+      </p>
+      <p>
+        <label>Message <textarea name="message" rows="6" required></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </div>
+</section>
   </main>
 
   <footer>
