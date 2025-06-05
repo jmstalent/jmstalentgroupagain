@@ -76,8 +76,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
     form {
-      display: flex;
-      flex-direction: column;
+      width: 100%;
     }
     label {
       margin-top: 1rem;
@@ -103,6 +102,10 @@
     }
     button:hover {
       background-color: #003873;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 150px;
     }
     footer {
       background-color: #000428;
@@ -148,35 +151,34 @@
       <p>JMS Talent Group accepts new talent by referral only. Unsolicited submissions may not receive a response.</p>
     </section>
 
-   <section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-box">
-    <form action="https://formspree.io/f/mldndokr" method="POST">
-  <input type="text" name="_gotcha" style="display:none" />
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <form action="https://formspree.io/f/mldndokr" method="POST">
+          <input type="text" name="_gotcha" style="display:none" />
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <label style="font-weight: 600;">
+              Name
+              <input type="text" name="name" required style="width: 100%; padding: 0.75rem;" />
+            </label>
 
-  <div style="display: flex; flex-direction: column; gap: 1rem;">
-    <label style="font-weight: 600;">
-      Name
-      <input type="text" name="name" required style="width: 100%; padding: 0.75rem;" />
-    </label>
+            <label style="font-weight: 600;">
+              Email
+              <input type="email" name="email" required style="width: 100%; padding: 0.75rem;" />
+            </label>
 
-    <label style="font-weight: 600;">
-      Email
-      <input type="email" name="email" required style="width: 100%; padding: 0.75rem;" />
-    </label>
+            <label style="font-weight: 600;">
+              Message
+              <textarea name="message" rows="8" required style="width: 100%; padding: 0.75rem;"></textarea>
+            </label>
 
-    <label style="font-weight: 600;">
-      Message
-      <textarea name="message" rows="8" required style="width: 100%; padding: 0.75rem;"></textarea>
-    </label>
-
-    <button type="submit" style="width: fit-content; padding: 0.75rem 1.5rem; align-self: flex-start; background-color: #004e92; color: white; border: none; border-radius: 4px; cursor: pointer;">
-      Send
-    </button>
-  </div>
-</form>
-  </div>
-</section>
+            <button type="submit" style="width: fit-content; padding: 0.75rem 1.5rem; align-self: flex-start; background-color: #004e92; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer>
